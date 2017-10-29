@@ -8,21 +8,22 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="cc.solart.section.simple.MainActivity">
+    tools:context="com.lsjwzh.section.simple.MainActivity">
 
-    <cc.solart.sectionbar.SectionProgressBar
-        android:id="@+id/section_1"
+    <com.lsjwzh.widget.StepProgressBar
+        android:id="@+id/step_bar1"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        app:section_bar_cursor="@drawable/icon_level_cursor" />
+        android:layout_height="70dp" />
 
 
-    <cc.solart.sectionbar.SectionProgressBar
-        android:id="@+id/section_2"
+    <com.lsjwzh.widget.StepProgressBar
+        android:id="@+id/step_bar2"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_below="@id/section_1"
+        android:layout_height="10dp"
+        android:layout_below="@id/step_bar1"
         android:layout_marginTop="20dp"
-        app:section_bar_cursor="@drawable/icon_arrow_state_blue"
-        app:section_foreground="@color/progress" />
+        android:background="@color/colorAccent"
+        android:padding="1dp"
+        app:spb_step_space_width="1dp"
+        app:spb_step_color="@color/progress" />
 </RelativeLayout>

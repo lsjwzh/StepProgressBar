@@ -1,32 +1,34 @@
-SectionProgressBar project
-===============
+StepProgressBar Project
+=======================
 
-一个显示等级进度的控件,可以自定义等级值、颜色、游标等。
+一个如ios音量\亮度 大小调节显示的进度条控件。
 
 <img src="./preview/section.gif">
 
 Usage
 -----
 ```java
-        mSectionBar = (SectionProgressBar) findViewById(R.id.section_2);
-        mSectionBar.setLevels(mLevels);
-        mSectionBar.setLevelValues(mLevelValues);
-        mSectionBar2.setCurrent(3000);
+
+        mStepBar = (StepProgressBar) findViewById(R.id.step_bar);
+        mStepBar.setProgressStep(9);
 ```
 
 ```xml
-<cc.solart.sectionbar.SectionProgressBar
-        android:id="@+id/section_progress_bar"
+
+    <com.lsjwzh.widget.StepProgressBar
+        android:id="@+id/step_bar2"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        app:section_bar_cursor="@drawable/icon_arrow_state_blue"
-        app:section_foreground="@color/progress" />
+        android:layout_height="10dp"
+        android:background="@color/colorAccent"
+        android:padding="1dp"
+        app:spb_step_space_width="1dp"
+        app:spb_step_color="@color/progress" />
 ```
     
 License
 -------
 
-    Copyright 2016 solartisan/imilk
+    Copyright 2017 lsjwzh
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StepProgressBar">
+        <attr name="spb_max_step_count" format="color"/>
+        <attr name="spb_step_color" format="color"/>
+        <attr name="spb_step_space_width" format="dimension"/>
+    </declare-styleable>
+</resources>
